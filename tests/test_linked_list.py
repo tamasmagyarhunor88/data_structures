@@ -113,3 +113,25 @@ def test_linked_list_insert_raises_error_if_range_bigger_than_length():
     expected = "Index out of range"
 
     assert actual == expected
+
+def test_linked_list_searched_for_data():
+    linked_list = LinkedList()
+    linked_list.append(13)
+    linked_list.append(3)
+    linked_list.append(5)
+
+    actual = linked_list.search(13)
+    expected = True
+
+    assert actual == expected
+
+def test_linked_list_searched_for_data():
+    linked_list = LinkedList()
+    linked_list.append(13)
+    linked_list.append(3)
+    linked_list.append(5)
+
+    actual = linked_list.search(23)
+    expected = False
+
+    assert actual == expected

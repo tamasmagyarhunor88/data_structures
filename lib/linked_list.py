@@ -44,3 +44,12 @@ class LinkedList:
             count += 1
             current = current.next
         return count
+    
+    def search(self, data):
+        """Searches for the first node with the given data in the list."""
+        current = self.head
+        while current:
+            if current.data == data:
+                return True
+            current = current.next
+        return False
