@@ -114,7 +114,7 @@ def test_linked_list_insert_raises_error_if_range_bigger_than_length():
 
     assert actual == expected
 
-def test_linked_list_searched_for_data():
+def test_linked_list_searched_for_data_that_exists():
     linked_list = LinkedList()
     linked_list.append(13)
     linked_list.append(3)
@@ -125,7 +125,7 @@ def test_linked_list_searched_for_data():
 
     assert actual == expected
 
-def test_linked_list_searched_for_data():
+def test_linked_list_searched_for_data_that_doesnt_exist():
     linked_list = LinkedList()
     linked_list.append(13)
     linked_list.append(3)
