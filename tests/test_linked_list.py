@@ -135,3 +135,14 @@ def test_linked_list_searched_for_data():
     expected = False
 
     assert actual == expected
+
+def test_linked_list_repr():
+    linked_list = LinkedList()
+    linked_list.append(13)
+    linked_list.append(3)
+    linked_list.append(5)
+
+    actual = str(linked_list)
+    expected = "13 => 3 => 5"
+
+    assert actual == expected

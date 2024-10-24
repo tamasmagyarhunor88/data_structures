@@ -53,3 +53,12 @@ class LinkedList:
                 return True
             current = current.next
         return False
+
+    def __str__(self):
+        """Returns a string representation of the linked list."""
+        result = []
+        current = self.head
+        while current:
+            result.append(str(current.data))
+            current = current.next
+        return " => ".join(result)
